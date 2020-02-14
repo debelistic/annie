@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="backgroundTransition.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Hey My Love</title>
+  <style>
+    body{
+      font-family: Tiff-tisa-sans-web-pro, sans-serifsa, "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .backgroundTransition {
+      background-image: url('imgs/img1.jpg');
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #0000ff36;
+      color: #fff;
+    }
+
+    main, header{
+      padding: 30px;
+      margin: 0 auto;
+      text-align: justify;
+      line-height: 1.3;
+    }
+
+    header{
+      padding-bottom: 0;
+    }
+
+    footer{
+      position: fixed;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      color: #fff;
+    }
+
+    footer a{
+      text-decoration: none;
+      color: #fff
+    }
+  </style>
+</head>
+<body>
+  <div class="backgroundTransition">
+    <header>
+      <p>Hey Anita,</p>
+    </header>
+
+    <main>
+      You are a proof that God always has something better in stock for us than we could ever imagine or ask for. When first I met you, your intelligence and beauty is what strikes me the most about you, eventually I found out about how kind and empathetic you are towards others. Then you inspire me in so many ways, trust me those words go a long way to keep me happy and motivated. I feel so blessed and I want tell the whole world of how amazing your soul is, everyone would be blessed to have you and I'm sure your friends feel the same way but trust me I'm just the luckiest of them all. That I love someone as amazing as you is a blessing I cherish a lot.backgroundTransition
+      <div>
+        Cheers🥂 to loving you for life and all the happy moments we would share together. If trying times ever come for us, we have God and each other to pull through😘
+      </div>
+      <p style="margin-bottom: 0;">Happy Valentine</p>
+      <p style="margin-top: 0;">From Victor Awotidebe</p>
+      <p>I love you</p>
+    </main>
+    
+
+    <footer>
+      Designed with <span style="color: red; margin: 0 4px;">❤</span> by <a href="https://github.com/debelistic">Victor Awotidebe</a> <span style="margin: 0 4px;">&copy;</span>2020.
+    </footer>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="backgroundTransition.js"></script>
+  <script>
+    $('.backgroundTransition').backgroundTransition({
+      backgrounds: [
+        // at least 2 images
+        { src: 'imgs/img1.jpg' },
+        { src: 'imgs/img2.jpg' },
+        { src: 'imgs/img3.jpg' }
+      ],
+      transitionDelay: 3,
+      animationSpeed: 800
+    });
+  </script>
+</body>
+</html>
